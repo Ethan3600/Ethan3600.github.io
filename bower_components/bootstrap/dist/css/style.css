@@ -1,0 +1,43 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+}
+
+
+.navbar-default{
+	background-color: #FFFFFF;
+}
+
+p {
+	font-size: 18px;
+}
+
+#banner {
+	max-width: 100%;
+	height: 42em;
+}
+
+#banlen {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#welcome {
+	margin-bottom: 180px;
+	font-size: 3em;
+	font-style: italic;
+}
+
+.glyphicon {
+	font-size: 3em;
+	cursor: progress;
+}
+
+.glyphicon:hover {
+	color: rgb(242, 183, 103);
+}
