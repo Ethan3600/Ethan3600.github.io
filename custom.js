@@ -13,3 +13,22 @@ $(document).ready(function (){
 	});
 
 });
+
+//shine function
+var config = new shinejs.Config({
+  numSteps: 7,
+  opacity: 0.25
+});
+
+var shine = new Shine(document.getElementById('welcome'));
+
+function handleMouseMove(event) {
+  shine.light.position.x = event.clientX;
+  shine.light.position.y = event.clientY;
+  shine.draw();
+}
+
+window.addEventListener('mousemove', handleMouseMove, false);
+
+shine.config = config;
+shine.draw();
