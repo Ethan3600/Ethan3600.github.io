@@ -41,3 +41,16 @@ p {
 .glyphicon:hover {
 	color: rgb(242, 183, 103);
 }
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #000000;
+}
+
+#footernote {
+	text-align: center;
+}
