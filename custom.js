@@ -11,11 +11,14 @@ $(document).ready(function (){
 	$("#opener").on('click', function(){
 		$.scrollTo('#banlen',1000);
 	});
+	$("#contact").on('click', function(){
+		$.scrollTo('#scroll2cont',1000);
+	});
 
 });
 
 //shine function
-var config = new shinejs.Config({
+var config = new shinejs.Config({ 
   numSteps: 7,
   opacity: 0.25
 });
