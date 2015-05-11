@@ -40,6 +40,7 @@ p {
 
 .glyphicon:hover {
 	color: rgb(242, 183, 103);
+	cursor: pointer;
 }
 
 #contactme {
@@ -88,6 +89,10 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 	background: #fff;
 }
 
+.btn-block:hover{
+	background-color: rgb(242, 183, 103);
+	cursor: pointer;
+}
 
 .footer {
   position: relative;
