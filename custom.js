@@ -3,7 +3,7 @@ new WOW().init();
 $(document).ready(function (){
 
 	$(".glyphicon").on('click', function(){
-		$.scrollTo("#top", 1000);
+		$.scrollTo("#top", 2050, {easing: "easeOutBounce"});
 	});
 	$("#about").on('click', function(){
 		$.scrollTo('#top',1000);
