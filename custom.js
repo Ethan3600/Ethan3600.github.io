@@ -2,16 +2,20 @@ new WOW().init();
 
 $(document).ready(function (){
 
-	$(".glyphicon").on('click', function(){
+	$(".glyphicon").on('click', function(e){
+		e.preventDefault();
 		$.scrollTo("#top", 1000/*2050 , {easing: "easeOutBounce"}*/);
 	});
-	$("#about").on('click', function(){
+	$("#about").on('click', function(e){
+		e.preventDefault();
 		$.scrollTo('#top',1000);
 	});
-	$("#opener").on('click', function(){
+	$("#opener").on('click', function(e){
+		e.preventDefault();
 		$.scrollTo('#banlen',1000);
 	});
-	$("#contact").on('click', function(){
+	$("#contact").on('click', function(e){
+		e.preventDefault();
 		$.scrollTo('#scroll2cont',1000);
 	});
 
