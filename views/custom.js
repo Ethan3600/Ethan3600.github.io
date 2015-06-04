@@ -4,7 +4,7 @@ $(document).ready(function (){
 
 	$(".glyphicon").on('click', function(e){
 		e.preventDefault();
-		$.scrollTo("#top", 1000/*2050 , {easing: "easeOutBounce"}*/);
+		$.scrollTo("#top", 2050 , {easing: "easeOutBounce"});
 	});
 	$("#about").on('click', function(e){
 		e.preventDefault();
