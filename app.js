@@ -5,11 +5,9 @@ var transporter = nodemailer.createTransport();
 var bodyParser = require('body-parser');
 
 app.use(express.static(__dirname + '/views'));
+app.use(express.static(__dirname + '/pictures'));
 app.use(bodyParser.json());
 
-app.get("/index.html", function (req, res){
-	console.log("Recieved");
-});
 
 app.post('/', function (req, res){
 	transporter.sendMail({
