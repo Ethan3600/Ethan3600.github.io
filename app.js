@@ -1,7 +1,13 @@
 var express = require('express');
 var app = express();
 var nodemailer = require('nodemailer');
-var transporter = nodemailer.createTransport();
+var transporter = nodemailer.createTransport("SMTP",{
+	service: "Gmail",
+	auth: {
+		user: 'gmail.user@gmail.com',
+		pass: 'gmailpass'
+	}
+});
 var bodyParser = require('body-parser');
 
 app.use(express.static(__dirname + '/views'));
@@ -17,6 +23,10 @@ app.post('/', function (req, res){
 	    text: req.body.message
 	});
 });
+
+app.get('/', function (req, res){
+	console.log(req.body.name);
+})
 
 
 var port = process.env.PORT || 3000
